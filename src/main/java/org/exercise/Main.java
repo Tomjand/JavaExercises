@@ -3,6 +3,7 @@ package org.exercise;
 import org.exercise.abstrac.Abstrac;
 import org.exercise.arrayvsarraylist.ArrayLinkVsArraylist;
 import org.exercise.generictype.GenericType;
+import org.exercise.streamexception.StreamException;
 
 public class Main
 {
@@ -16,5 +17,8 @@ public class Main
 
 		 final Abstrac abstrac = new Abstrac();
 		 abstrac.start();
+
+		 final StreamException streamException = new StreamException();
+		 streamException.start();
 	}
 }
