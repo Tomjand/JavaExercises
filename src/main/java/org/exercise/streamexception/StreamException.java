@@ -44,7 +44,7 @@ public class StreamException
 	private void loopNumbersStreamWithUncheckedException()
 	{
 		final int[] numbers = {1, 2, 3, 4, 5};
-
+//zamienic na Array i numbers
 		IntStream.range(0, numbers.length)
 		         .forEach(i -> {
 			         if (i == 3) {
@@ -124,17 +124,19 @@ public class StreamException
 		return null;
 	}
 
-	public static <T,R> Function<T,R> wrapper(final CheckedFunction<T,R> checkedFunction) {
-		return t -> {
-			try {
-				return checkedFunction.apply(t);
-			} catch (final myException e) {
-				//??? why ???
-				//throw new myException("Exception in wrapper");
-				e.printStackTrace();
-			}
-		};
-	}
+	//public static <T,R> Function<T,R> wrapper(final CheckedFunction<T,R> checkedFunction) {
+	//	return t -> {
+	//		try {
+	//			return checkedFunction.apply(t);
+	//		} catch (final myException e) {
+	//			e.printStackTrace();
+	//		}
+	//	};
+	//}
+//Zapoznac sie z:
+	//1.apache-lang
+	// 2. apache-commons
+	//3. sterowanie wyjatkami
 
 
 }
