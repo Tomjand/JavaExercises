@@ -1,7 +1,6 @@
 package org.exercise.streamexception;
 
 import java.util.Optional;
-import java.util.function.Function;
 import java.util.stream.IntStream;
 
 public class StreamException
@@ -15,10 +14,11 @@ public class StreamException
 		loopNumbersStreamWithCheckedException();
 		loopNumbersStreamWithCheckedExceptionWithHandleEx();
 	}
+
 	private void loopNumbers()
 	{
-		final int[] numbers = {1, 2, 3, 4, 5};
-		for (int i = 0; i <= numbers.length-1; i++)
+		final int[] numbers = { 1, 2, 3, 4, 5 };
+		for (int i = 0; i <= numbers.length - 1; i++)
 		{
 			if (i == 3)
 			{
@@ -30,11 +30,12 @@ public class StreamException
 
 	private void loopNumbersStream()
 	{
-		final int[] numbers = {1, 2, 3, 4, 5};
+		final int[] numbers = { 1, 2, 3, 4, 5 };
 
 		IntStream.range(0, numbers.length)
 		         .forEach(i -> {
-			         if (i == 2) {
+			         if (i == 2)
+			         {
 				         System.out.println("i is 2");
 			         }
 			         System.out.println("stream: " + numbers[i]);
@@ -43,11 +44,12 @@ public class StreamException
 
 	private void loopNumbersStreamWithUncheckedException()
 	{
-		final int[] numbers = {1, 2, 3, 4, 5};
+		final int[] numbers = { 1, 2, 3, 4, 5 };
 //zamienic na Array i numbers
 		IntStream.range(0, numbers.length)
 		         .forEach(i -> {
-			         if (i == 3) {
+			         if (i == 3)
+			         {
 				         //throw new RuntimeException("i is 3");
 			         }
 			         System.out.println("stream UN: " + numbers[i]);
@@ -56,15 +58,19 @@ public class StreamException
 
 	private void loopNumbersStreamWithCheckedException()
 	{
-		final int[] numbers = {1, 2, 3, 4, 5};
+		final int[] numbers = { 1, 2, 3, 4, 5 };
 
 		IntStream.range(0, numbers.length)
 		         .forEach(i -> {
-			         if (i == 4) {
+			         if (i == 4)
+			         {
 				         //anty pattern
-						 try {
+				         try
+				         {
 					         throw new myException("myException i  is 4");
-				         } catch (final myException e) {
+				         }
+				         catch (final myException e)
+				         {
 					         e.printStackTrace();
 				         }
 			         }
@@ -85,7 +91,7 @@ public class StreamException
 				return i;
 			}
 		}
-		catch(myException e)
+		catch (myException e)
 		{
 			e.printStackTrace();
 		}
@@ -94,7 +100,7 @@ public class StreamException
 
 	private void loopNumbersStreamWithCheckedExceptionWithHandleEx()
 	{
-		final int[] numbers = {1, 2, 3, 4, 5, 6, 7};
+		final int[] numbers = { 1, 2, 3, 4, 5, 6, 7 };
 
 		IntStream.range(0, numbers.length)
 		         .forEach(i -> {
@@ -117,7 +123,7 @@ public class StreamException
 				return Optional.of(i);
 			}
 		}
-		catch(myException e)
+		catch (myException e)
 		{
 			e.printStackTrace();
 		}

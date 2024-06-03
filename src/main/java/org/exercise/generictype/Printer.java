@@ -6,10 +6,14 @@ import org.exercise.abstrac.Serializable;
 public class Printer<T extends Animal & Serializable>
 {
 	T input;
-	public Printer(final T input ){
+
+	public Printer(final T input)
+	{
 		this.input = input;
 	}
-	void print(){
+
+	void print()
+	{
 		input.live();
 		System.out.println("Printer " + input);
 	}

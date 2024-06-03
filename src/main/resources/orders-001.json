@@ -1,0 +1,42 @@
+{
+  "account": {
+    "license": "license",
+    "externalTenantId": "externalTenantId",
+    "contractCurrency": "EUR"
+  },
+  "order": {
+    "date": "2024-02-16T07:28:28.700+00:00",
+    "orderCode": "00000001",
+    "currency": "USD",
+    "net": false,
+    "subTotal": 541.34,
+    "deliveryCost": 7.99,
+    "paymentCost": 0,
+    "totalTax": 26.16,
+    "totalDiscount": 0,
+    "total": 549.33,
+    "entries": [
+      {
+        "entryNumber": 0,
+        "productCode": "1992693",
+        "quantity": 1,
+        "unit": "pieces",
+        "totalTax": 25.78,
+        "totalDiscount": 0,
+        "total": 541.34,
+        "gmvSsc": null,
+        "gmvVc": null,
+        "gmvCpq": null
+      }
+    ]
+  },
+  "billing": {
+    "id": "00000001||af1644c7-ebd0-4d92-8571-909cfb90349f",
+    "gmv": 515.18,
+    "currency": "USD",
+    "date": "2024-02-16T07:28:28.700+00:00",
+    "gmvSsc": null,
+    "gmvVc": null,
+    "gmvCpq": null
+  }
+}

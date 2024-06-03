@@ -6,13 +6,14 @@ import java.util.LinkedList;
 
 public class ArrayLinkVsArraylist
 {
-	public void start(){
+	public void start()
+	{
 		System.out.println("================ ArrayLinkVsArraylist =================");
 
-		final String[] pepoleArray = {"Ann", "Jan", "Rob"};
+		final String[] pepoleArray = { "Ann", "Jan", "Rob" };
 		System.out.println(pepoleArray[0]);
 
-		final ArrayList<String> pepoleList = new ArrayList<>(Arrays.asList("A","B","C"));
+		final ArrayList<String> pepoleList = new ArrayList<>(Arrays.asList("A", "B", "C"));
 		System.out.println(pepoleList);
 		pepoleList.add("p1");
 		pepoleList.add("p2");

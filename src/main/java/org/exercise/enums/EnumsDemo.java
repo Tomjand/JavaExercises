@@ -7,7 +7,8 @@ public class EnumsDemo
 		System.out.println("================= EnumsDemoEnum 1 =================");
 		for (final EnumsDemoEnum enumsDemoEnum : EnumsDemoEnum.values())
 		{
-			System.out.println(enumsDemoEnum.getValue() + " " + enumsDemoEnum.name() + " " + enumsDemoEnum.getValue()+ " " + enumsDemoEnum.getColor());
+			System.out.println(
+					enumsDemoEnum.getValue() + " " + enumsDemoEnum.name() + " " + enumsDemoEnum.getValue() + " " + enumsDemoEnum.getColor());
 
 		}
 

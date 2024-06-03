@@ -1,0 +1,5 @@
+### test 01
+GET http://127.0.0.1:10000/devstoreaccount1/images-example/image.png
+
+### get blob orders-001
+GET http://127.0.0.1:10000/devstoreaccount1/orders/orders-001

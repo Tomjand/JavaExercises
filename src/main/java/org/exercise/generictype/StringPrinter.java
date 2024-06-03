@@ -9,7 +9,8 @@ public class StringPrinter
 		this.stringToPrint = stringToPrint;
 	}
 
-	void print(){
+	void print()
+	{
 		System.out.println(stringToPrint);
 	}
 }

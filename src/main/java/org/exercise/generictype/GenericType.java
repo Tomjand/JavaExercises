@@ -10,6 +10,18 @@ import org.exercise.abstrac.Fish;
 
 public class GenericType
 {
+	private static <T, V> T shout(final T input, final V input2)
+	{
+		System.out.println(input + "!!!!!");
+		System.out.println(input2);
+		return input;
+	}
+
+	private static void printList(final List<? extends Animal> myList)
+	{
+		System.out.println(myList);
+	}
+
 	public void start()
 	{
 		System.out.println("=============== Generics Type: ==============");
@@ -32,17 +44,5 @@ public class GenericType
 		birdsList.add(new Bird("bird-1"));
 		printList(birdsList);
 
-	}
-
-	private static <T, V> T shout(final T input, final V input2)
-	{
-		System.out.println(input + "!!!!!");
-		System.out.println(input2);
-		return input;
-	}
-
-	private static void printList(final List<? extends Animal> myList)
-	{
-		System.out.println(myList);
 	}
 }

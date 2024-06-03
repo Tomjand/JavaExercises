@@ -25,6 +25,14 @@ public enum EnumsDemoEnum
 		this.color = 0x0000AA;
 	}
 
+	public static String StaticMtehod()
+	{
+		final EnumsDemoEnum methodNoStatic = EnumsDemoEnum.INFO;
+		methodNoStatic.y2();
+		System.out.println("test from x: static method");
+		return "test from x";
+	}
+
 	public int getValue()
 	{
 		return value;
@@ -40,14 +48,8 @@ public enum EnumsDemoEnum
 		return color;
 	}
 
-	public static String StaticMtehod(){
-		final EnumsDemoEnum methodNoStatic = EnumsDemoEnum.INFO;
-		methodNoStatic.y2();
-		System.out.println("test from x: static method");
-		return "test from x";
-	}
-
-	public String y2 (){
+	public String y2()
+	{
 		System.out.println("test from y");
 		return "test from y";
 	}
