@@ -33,10 +33,10 @@ public class Blobs
 			logger.info("Container created : {}", containerName);
 		}
 
-		blob.createBlobFromJsonFile("src/main/resources/orders-001.json", "orders-001");
+		blob.createBlobFromJsonFile("src/main/resources/orders-001.json", "orders-002");
 
 		printBlobList(blobServiceClient);
-		printBlobByName("orders-001");
+		printBlobByName("orders-002");
 	}
 
 	private void printBlobList(final BlobServiceClient blobServiceClient)
